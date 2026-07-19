@@ -7,6 +7,43 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.page{
+  display: flex;
+  flex-direction: column;
+  border: 2px red solid;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.header,
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer{
+  background-color: rgb(245, 241, 241);
+}
+
+.left-links,
+.right-links{
+  display: flex;
+  gap: 16px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+button{
+  padding: 8px;
+}
+
 img {
   width: 600px;
 }
@@ -23,4 +60,18 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
 }
